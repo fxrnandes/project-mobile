@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
-            child: Builder( // Adiciona um Builder para garantir o contexto correto
+            child: Builder( 
               builder: (BuildContext context) {
                 return Column(
                   mainAxisSize: MainAxisSize.min,
@@ -45,7 +45,6 @@ class MyApp extends StatelessWidget {
                     const SizedBox(height: 24),
                     ElevatedButton(
                       onPressed: () {
-                        // Chama o ScaffoldMessenger com o contexto correto
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(content: Text('Botão pressionado!')),
                         );
