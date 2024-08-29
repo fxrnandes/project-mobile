@@ -1,6 +1,6 @@
-# projeto_perguntas
+# projeto_mobile
 
-A new Flutter project.
+Atividade sobre flutter/dart para a matéria de desenvolvimento mobile
 
 ## Getting Started
 
