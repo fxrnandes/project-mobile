@@ -1,8 +1,23 @@
-# Exclui arquivos de outras linguagens geradas automaticamente pelo Flutter
+# Ignorar diretórios de dependências e plataformas específicas
 android/** linguist-vendored
 ios/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+web/** linguist-vendored
+
+# Ignorar diretórios de build
 build/** linguist-vendored
 
-# Considera somente arquivos Dart para a contagem de linguagem
+# Ignorar arquivos de configuração de CMake
+*.cmake linguist-vendored
+
+# Marcar todos os arquivos Dart como principais para a detecção de linguagem
 *.dart linguist-language=Dart
-*.swift linguist-language=Swift
+
+# Ignorar arquivos binários ou de configuração específicos
+*.cpp linguist-vendored
+*.h linguist-vendored
+*.c linguist-vendored
+*.m linguist-vendored
+*.swift linguist-vendored
